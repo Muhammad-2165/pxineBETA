@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+   <title>MiningHome</title>
+   <meta charset="utf-8">
+   <meta name="author" content="W_Ram19">
+   <meta name="description" content="MiningHome - это игра.">
+   <meta name="keywords" content="mining, pickaxe , coin/coins">
+   <title>MiningHome</title>
+   <link rel="stylesheet" href="css/main.css">
+        <!--В атрибуте "href" нужно указать путь к css файлу-->
+  <style>
+    body {
+  transform: scale(2.0); 
+  transform-origin: 2 0; 
+}
+    button {
+      height: 120px;
+      width: 120px;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        text-align="left"
+   </style>
+ </head>
+
+  <body>
+    <div class=container4>
+    <ul>
+      <li title="?"><big><code>Get coins</code>
+      <h3><code><a href="mailto:ima213340@gmail.com" , title="Кликни!">Есть вопрос? Обращайся!</a></code></h3>
+    </div>
+    </ul>
+    
+    <script src="js/main.js"> </script>
+    <div>GO GO GOOO!</div>          
+</head>
+<body style="color:blue">
+    <h2 id="pye1"><big><code>Tasks</big></code></h2>
+    <ul id="pye2">
+      <li><code><big>Get 1000 coins</big></code></li>
+      <li><code><big>Get 10000 coins</big></code></li>
+      <li><code><big>Get 100000 coins</big></code></li>
+    <h1>Сoin mining</h1>
+    <img src="https://avatars.mds.yandex.net/i?id=31dc365bd833915239f650911ebf86dfbc998dd3-10100636-images-thumbs&n=13">
+    <button id="clickButton">Dig</button>
+    <p>Coins: <span id="clickCount">100</span></p>
+
+    <script>
+        // Инициализируем счетчик кликов
+        let count = 100 ;
+
+        // Получаем элементы кнопки и отображения
+        const button = document.getElementById('clickButton');
+        const countDisplay = document.getElementById('clickCount');
+
+        // Функция для обработки клика на кнопку
+        button.addEventListener('click', () => {
+            count++; // Увеличиваем счетчик
+            countDisplay.textContent = count; // Обновляем отображение количества кликов
+        });
+    </script>
+    <form method="post"> <!--action=""-->
+      <label><big><code>Note</code></big></label>
+      <input type="text" placeholder="You don't need any tips, write." maxlength="9" id="text pye">
+      <input type="time" id="time pye">
+      <br><input type="reset" value="Clear"></br>
+    </form>
+  </body>
+</html>
